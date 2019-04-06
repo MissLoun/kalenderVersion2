@@ -1,0 +1,187 @@
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="10dp"
+
+
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:background="@color/gelb"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/button_Zuvor"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/zuvor"
+                android:background="@android:color/white"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/gelb"/>
+
+            <TextView
+                android:id="@+id/textView_Monat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignTop="@+id/button_Zuvor"
+
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginRight="0dp"
+                android:layout_toLeftOf="@id/button_Next"
+
+                android:layout_toRightOf="@id/button_Zuvor"
+                android:gravity="center"
+                android:text="Monat"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/textView_Jahr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/textView_Monat"
+
+                android:layout_alignTop="@+id/button_Zuvor"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="0dp"
+                android:layout_toLeftOf="@id/button_Next"
+                android:layout_toRightOf="@id/button_Zuvor"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="Jahr"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/button_Next"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:text="@string/next"
+                android:textColor="@color/gelb"/>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_kalender_Wochentage"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/gelb"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/textViewMo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mo"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/textViewDi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Di"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/textViewMi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mi"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/textViewDo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Do"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/textViewFr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fr"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/textViewSa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sa"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/textViewSo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="So"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+        <GridView
+            android:id="@+id/gridView_Kalender_Tabelle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="7"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+
+    </LinearLayout>
